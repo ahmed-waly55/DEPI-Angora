@@ -506,12 +506,16 @@ progress::-webkit-progress-value {
 
 }
 
+
+
 .Client-r .client-item img {
     /* text-align: center; */
-    padding: 20px;
+    padding: 5px;
     width: 150px;
+    height: 150px;
     border-radius: 50%;
     cursor: pointer;
+
 }
 
 @media screen and (max-width:767px) {
@@ -524,3 +528,13 @@ progress::-webkit-progress-value {
     }
 
 }
+
+.client-d {
+    text-align: center;
+}
+
+.client-act {
+    border: 2px solid orangered;
+}
+
+/* Start touch section  */
