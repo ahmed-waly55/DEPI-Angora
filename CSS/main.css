@@ -537,5 +537,26 @@ progress::-webkit-progress-value {
     border: 2px solid orangered;
 }
 
-/* Start touch section  */
-.touch {}
+/* Start contact-us section  */
+.contact-us {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.contact-us .container>h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.contact-us .container>p {
+    text-align: center;
+    margin: 20px 0;
+    color: #555;
+    line-height: 1.6;
+    transform: scale(0.6);
+    font-size: 45px;
+}
