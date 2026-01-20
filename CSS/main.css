@@ -1,0 +1,409 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /* max-width: 1200px; */
+
+    margin: auto;
+    padding: 0 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+/* For devices with a minimum width of 768px (Medium) */
+@media screen and (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* For devices with a minimum width of 992px (Large) */
+@media screen and (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+.carousel {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("./../images/slideshow-1.jpg");
+    padding-top: 20px;
+    background-size: cover;
+}
+
+.carousel::after {
+    content: ">";
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: #ffffff24;
+    z-index: 1;
+    border: 1px solid white;
+    border-left: none;
+    text-align: center;
+    line-height: 40px;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.carousel::before {
+    content: "<";
+    position: absolute;
+    bottom: 44%;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: #ffffff24;
+    z-index: 1;
+    border: 1px solid white;
+    border-left: none;
+    text-align: center;
+    line-height: 40px;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    /* row-gap: 10px; */
+    /* background-color: black; */
+}
+
+nav {
+    border-bottom: solid #ffffff36 1px;
+    padding-bottom: 20px;
+    z-index: 5;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: #0000001f;
+    top: 0;
+    height: 60px;
+    line-height: 60px;
+    transition: 0.2s;
+}
+
+nav:hover {
+    background-color: #000;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:456px) {
+    nav {
+        /* width: 81%; */
+        width: 100%;
+    }
+
+    progress {
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width:376px) {
+    nav {
+        /* width: 67%; */
+        width: 100%;
+    }
+}
+
+nav ul li {
+    display: inline-block;
+
+}
+
+@media screen and (max-width:778px) {
+    nav ul {
+        display: none;
+    }
+
+}
+
+.menu {
+    display: none !important;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:778px) {
+    .menu {
+        display: block !important;
+    }
+
+}
+
+.active {
+    color: orangered;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+    color: white;
+}
+
+nav ul li {}
+
+.socialMedia a {
+    color: white;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+@media screen and (max-width:991px) {
+    .socialMedia {
+        display: none;
+    }
+
+    nav .container {
+        width: 100%;
+    }
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+header .container h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* start About section */
+.about {
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    /* align-content: space-around; */
+}
+
+@media screen and (max-width:768px) {
+    .about .container {
+        flex-direction: column;
+        /* align-items: center; */
+    }
+}
+
+@media screen and (max-width:650px) {
+    .about .p p {
+        /* font-size: 20px !important; */
+        line-height: 6px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .about .p p {
+        font-size: 16px !important;
+    }
+
+    .about .des {
+        /* width: 100% !important; */
+    }
+}
+
+.about h1 {
+    text-align: center;
+}
+
+.about p {
+    text-align: center;
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+.about .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* gap: 20px; */
+    /* width: 100%; */
+    /* width: 1024px; */
+}
+
+.main {
+    /* width: 100%; */
+}
+
+.about .p p {
+    color: #555;
+    line-height: 0;
+    /* margin-bottom: 20px; */
+    /* width: 500px; */
+    text-align: center;
+    /* font-size: 28px; */
+    line-height: 8.2px;
+}
+
+
+
+progress {
+    width: 450px;
+    height: 5px;
+
+    /* background-color: orangered; */
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #eee;
+}
+
+progress::-webkit-progress-value {
+    background-color: orangered;
+}
+
+.about .des {
+    /* flex-grow: 1; */
+    /* flex-direction: column; */
+    width: 100%;
+    /* width: 250px; */
+}
+
+.skills {
+    /* flex-grow: 1; */
+    /* flex-direction: column; */
+    width: 100% !important;
+    /* width: 250px; */
+}
+
+/* Start Cards  */
+.hero {
+    /* margin-top: 180px; */
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hero-text h1 {
+    text-align: center;
+}
+
+.hero-text p {
+    text-align: center;
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media screen and (max-width:768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.card img {
+    width: 250px;
+    /* position: relative; */
+}
+
+.card {
+    position: relative;
+    /* z-index: -1; */
+
+}
+
+.overlay {
+    height: 85%;
+    width: 95%;
+    position: absolute;
+    background: #ff4500b3;
+    /* opacity: 0.1; */
+    display: none;
+    text-align: center;
+    line-height: 250px;
+    left: 5px;
+    top: 5px;
+    transition: 0.5s;
+    /* z-index: -2; */
+}
+
+.card:hover .overlay {
+    display: block;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+/* Start Contact section  */
+.contact {
+    position: absolute;
+    /* bottom: -150px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    height: 200px;
+}
+
+.contact h1 {
+    font-size: 36px;
+    color: rgb(33, 33, 33);
+}
+
+@media screen and(min-width:450px) {
+    .contact h1 {
+        font-size: 20px;
+    }
+}
+
+.contact .btn {
+    padding: 15px 30px;
+    background-color: rgb(218, 20, 20);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
