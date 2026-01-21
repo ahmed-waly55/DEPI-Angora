@@ -388,7 +388,7 @@ progress::-webkit-progress-value {
     align-items: center;
     margin-top: 20px;
     overflow: hidden;
-    height: 200px;
+    /* height: 200px; */
     /* flex-direction: column; */
 }
 
@@ -544,6 +544,8 @@ progress::-webkit-progress-value {
     display: flex;
     flex-direction: column;
     margin: 20px 0;
+    background-color: #fafafa;
+
 }
 
 .contact-us .container>h1 {
@@ -559,4 +561,73 @@ progress::-webkit-progress-value {
     line-height: 1.6;
     transform: scale(0.6);
     font-size: 45px;
+}
+
+form {
+    width: 450px;
+    margin-top: 60px;
+    /* margin-bottom: 60px; */
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 20px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.contact-d {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* color: orangered; */
+}
+
+.contact-d div {
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.contact-d .d {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    border-bottom: 1px solid #ccc;
+    width: 350px;
+}
+
+.contact-d i {
+    font-size: 30px;
+    color: orangered;
+    margin-right: 5px;
+}
+
+.contact-d h3 {
+    font-size: 25px;
+    /* width: 700px; */
+}
+
+@media screen and (max-width:768px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Start Footer  */
+
+footer {
+    background-color: #111;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer i {
+    color: white;
 }
