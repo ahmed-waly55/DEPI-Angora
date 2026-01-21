@@ -625,7 +625,10 @@ footer {
     background-color: #111;
     color: white;
     padding: 20px 0;
+    height: 280px;
+    background-size: contain;
     text-align: center;
+    background-image: url(./../images/dotted-map.png);
 }
 
 footer i {
